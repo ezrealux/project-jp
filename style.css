@@ -1,0 +1,17 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background: #f0f0f8;
+}
+
+.map-container {
+  max-width: 800px;
+  margin: auto;
+  border: 2px solid #ccc;
+  background: white;
+}
+
+.rail-map {
+  width: 100%;
+  height: auto;
+}

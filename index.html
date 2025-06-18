@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>日本鉄道路線マップ</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>日本鉄道路線マップ</h1>
+  <div class="map-container">
+    <!-- SVG 地圖直接嵌入或用 <img> 也可 -->
+    <svg viewBox="0 0 800 1000" class="rail-map">
+      <!-- 日本輪廓（可省略或用圖檔） -->
+      <image href="images/japan-map.svg" width="800" height="1000" />
+
+      <!-- 東海道新幹線 -->
+      <a xlink:href="lines/tokaido-shinkansen.html">
+        <polyline points="120,800 300,600 500,400 700,300"
+                  stroke="blue" stroke-width="5" fill="none" />
+      </a>
+
+      <!-- 山手線（簡化成圓圈） -->
+      <a xlink:href="lines/yamanote.html">
+        <circle cx="450" cy="420" r="40"
+                stroke="green" stroke-width="4" fill="none" />
+      </a>
+
+    </svg>
+  </div>
+</body>
+</html>
